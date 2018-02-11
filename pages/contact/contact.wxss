@@ -1,0 +1,5 @@
+/* contact.wxss */
+.contact{}
+.contact .weui-cell{ padding: 15px;}
+.contact .iconfont{ color: #999; margin-right: 10px;}
+.contact .weui-cell__hd{ width: 70px;}

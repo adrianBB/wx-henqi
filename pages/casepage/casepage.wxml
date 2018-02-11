@@ -1,0 +1,12 @@
+<!--casepage.wxml-->
+<view class="weui-content">
+    <view class="singlepage">
+        <view class="singlepage-title">佛主</view>        
+        <view class="singlepage-cont">            
+           
+            <view >佛是全智、全悲与大能的人。把佛像纹身纹在我们的皮肤上，更是一种精神境界的提升。（tattoo）佛像纹身就是这种可以用超出常理的表达方式，将佛的精神不仅时刻谨记在心上，更淋漓尽致地展现在我们受之父母的肉体上。</view>
+         <image style="margin:10px 0;" src="http://hqwg8.com/public/uploads/ueditor/images/20170808/1502158333114786.jpg" mode="widthFix" style="width:100%;"></image>
+        </view>
+    </view>
+</view>
+

@@ -1,0 +1,34 @@
+<!--contact.wxml-->
+<view class="weui-content">
+
+    <view class="weui-cells mt10 contact">
+        <view class="weui-cell">
+            <view class="weui-cell__hd">电话：</view>
+            <view class="weui-cell__bd">18030587828</view>
+            <view class="weui-cell__ft" bindtap="call"><text class="iconfont icon-tel"></text></view>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__hd">传真：</view>
+            <view class="weui-cell__bd">028-88888888</view>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__hd">邮箱：</view>
+            <view class="weui-cell__bd"> 345219520@qq.com</view>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__hd">Q Q：</view>
+            <view class="weui-cell__bd"> 43548352</view>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__hd">微信：</view>
+            <view class="weui-cell__bd">13541254828</view>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__hd">地址：</view>
+            <view class="weui-cell__bd">四川省成都市武侯区红瓦寺街学府花园锦学阁18楼B</view>
+            <view class="weui-cell__ft"  bindtap="tomap"><text class="iconfont icon-map-h"></text></view>
+        </view>
+    </view>
+
+     <map style="width: 100%; height:200px;"  bindtap="tomap" longitude="{{lo}}" latitude="{{la}}"   markers="{{markers}}"  ></map> 
+</view>

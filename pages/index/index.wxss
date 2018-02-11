@@ -1,0 +1,29 @@
+/**index.wxss**/
+
+.weui-bar-header{ height: 50px; display: -webkit-box; -webkit-box-align: center; line-height: 50px;}
+.weui-bar-header ~ .weui-content{ padding-top: 50px;}
+.menubtn{ width: 50px; height: 50px; text-align: center; line-height: 50px; font-size:24px; }
+.logo{ -webkit-box-flex: 1; text-align: center; line-height: 1;}
+.logo image{width: 100px; height: 26px;}
+
+.sitenav{ -webkit-transition: all .4s; transition:all .4s; background-color: rgba(255,255,255,0.95); display: -webkit-box; -webkit-box-orient: vertical; -webkit-box-pack: center; position: fixed; left: 0; right: 0; top: 50px; bottom: 0; z-index: 8;}
+.sitenav navigator{ margin: 0 100rpx; position: relative; text-align: center; line-height: 60px; font-size: 18px;}
+.sitenav navigator::after{content: ""; height: 1px;  background-color: #CCC; -webkit-transform: scaleY(0.5); -webkit-transform-origin: 0 100% 0; position: absolute; left: 0; right: 0; bottom: 0;}
+.sitenav navigator:last-child::after{ content: none;}
+
+.banner{height: 400rpx; background-color: #FFF;}
+.banner image{width: 750rpx; height: 400rpx;}
+
+.profile{ padding: 20px; background-color: #FFF;}
+.profile-hd{ padding-top: 10px; text-align: center; font-size: 18px; line-height: 1.4; font-weight: 500;}
+.profile-hd .line{ width: 50px; height: 2px; margin: 5px auto 0; background-color: #000;}
+.profile-bd{margin-top: 20px; text-align: center; font-size: 14px; line-height: 24px; color: #444;}
+.profile .more{ margin-top: 10px; text-align: center;}
+.profile .more text{width: 5px; height: 5px; margin: 0 5px; background-color: #DDD; border-radius: 50%; display: inline-block;}
+
+.product{ background-color: #FFF; margin: 10px 0;}
+.product .tit{ font-size: 18px; font-weight: 500;}
+.product-item:last-child{ margin-bottom: 0;}
+
+.case{ background-color: #FFF; margin: 10px 0;}
+.case .tit{ font-size: 18px; font-weight: 500;}

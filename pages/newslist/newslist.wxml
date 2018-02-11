@@ -1,0 +1,18 @@
+<!--newslist.wxml-->
+<view class="weui-content">
+    <view class="weui-cells mt10">       
+        <navigator wx:for="{{list}}" url="{{item.url}}" open-type="navigate" class="weui-cell news-item" >
+            <view class="weui-cell__hd"><image src="{{item.image}}" mode="aspectFill"></image></view>
+            <view class="weui-cell__bd">
+                <view class="title ellipsis">{{item.title}}</view>
+                <view class="date">{{item.date}}</view>
+                <view class="desc ellipsis-2">{{item.desc}}</view>
+            </view>
+        </navigator>
+    </view>
+    <view class="weui-loadmore" hidden="{{loadingshow?false:true}}">
+        <view class="weui-loading"></view>
+        <view class="weui-loadmore__tips">正在加载</view>
+    </view>    
+
+</view>

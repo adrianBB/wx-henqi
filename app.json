@@ -1,0 +1,57 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/zuopin/zuopin",
+        "pages/about/about",
+        "pages/newslist/newslist",
+        "pages/newspage/newspage",
+        "pages/caselist/caselist",
+        "pages/casepage/casepage",
+        "pages/contact/contact",
+        "pages/shouhou/shouhou"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "backgroundColor": "#f8f8f8",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "黑旗纹身",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#999",
+        "selectedColor": "#000",
+        "backgroundColor": "#FFF",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "images/icon_home.png",
+                "selectedIconPath": "images/icon_home_h.png"
+            },
+            {
+                "pagePath": "pages/about/about",
+                "text": "关于",
+                "iconPath": "images/icon_about.png",
+                "selectedIconPath": "images/icon_about_h.png"
+            },
+            {
+                "pagePath": "pages/newslist/newslist",
+                "text": "新闻",
+                "iconPath": "images/icon_news.png",
+                "selectedIconPath": "images/icon_news_h.png"
+            },
+            {
+                "pagePath": "pages/zuopin/zuopin",
+                "text": "作品",
+                "iconPath": "images/icon_case.png",
+                "selectedIconPath": "images/icon_case_h.png"
+            },
+            {
+                "pagePath": "pages/contact/contact",
+                "text": "联系",
+                "iconPath": "images/icon_contact.png",
+                "selectedIconPath": "images/icon_contact_h.png"
+            }
+        ]
+    }
+}

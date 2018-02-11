@@ -1,0 +1,25 @@
+<!--zuopin.wxml-->
+<view class="weui-bar weui-bar-header screen">
+    <scroll-view scroll-x>
+        <view class="screen-item active">传统纹身</view>
+        <view class="screen-item">素描纹身</view>
+        <view class="screen-item">SCHOOL纹身</view>
+        <view class="screen-item">纹身遮盖</view>
+        <view class="screen-item">文字于小图</view>
+    </scroll-view>
+</view>
+<view class="weui-content">   
+    <view class="clearfix">
+        <block wx:for="{{list}}">
+            <view  class="product-item"  >
+                <image src="{{item.image}}" mode="aspectFill" data-src="{{item.image}}" bindtap="previewImage"></image>
+                <view class="ellipsis name">{{item.name}}</view>
+            </view>
+        </block>
+    </view>
+    <view class="weui-loadmore" wx:if="{{loadingshow}}">
+        <view class="weui-loading"></view>
+        <view class="weui-loadmore__tips">正在加载</view>
+    </view>   
+    
+</view>

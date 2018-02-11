@@ -1,0 +1,62 @@
+<!--index.wxml-->
+<view class="weui-bar weui-bar-header">
+    <view class="menubtn" bindtap="shownav"><text class="iconfont icon-menu"></text></view>
+    <view class="logo">
+        <image src="../img/logo.jpg" mode="scaleToFill"></image>
+    </view>
+</view>
+<view class="sitenav" wx:if="{{navshow}}">
+    <navigator url="/pages/about/about" open-type="switchTab" bindtap="hidenav">纹馆介绍</navigator>
+    <navigator url="/pages/newslist/newslist" open-type="switchTab" bindtap="hidenav">新闻动态</navigator>
+    <navigator url="/pages/zuopin/zuopin" open-type="switchTab" bindtap="hidenav">作品展示</navigator>
+    <navigator url="/pages/caselist/caselist" open-type="navigate" bindtap="hidenav">案例展示</navigator>
+    <navigator url="/pages/shouhou/shouhou" open-type="navigate" bindtap="hidenav">售后服务</navigator>
+    <navigator url="/pages/contact/contact" open-type="switchTab" bindtap="hidenav">联系我们</navigator>
+</view>
+<view class="weui-content">
+    <swiper class="banner" indicator-dots="true" autoplay="true">
+        <swiper-item wx:for="{{banner}}">        
+            <navigator url="{{item.url}}"><image src="{{item.image}}" mode="scaleToFill"></image></navigator>
+        </swiper-item>        
+    </swiper>
+    <view class="profile">
+        <view class="profile-hd">
+            <view>专注做点东西</view>
+            <view>至少对得起光阴岁月...</view>
+            <view class="line"></view>
+        </view>
+        <view class="profile-bd">
+            成都黑旗纹身馆成立于2003年，是成都地区极具专业性的纹身店，因为我们只做纹身，称为专业纹身店是当值无愧的，加之我们的纹身师均为美术院校毕业，所以在专业上具备了相当的实力。 黑旗纹馆多年来，虽不坐落在闹市中心，俗话说：‘好酒不怕巷子深’，黑旗耐心热情的服务，舒适的纹身环境。
+        </view>
+        <navigator class="more" url="../about/about" open-type="switchTab"><text></text><text></text><text></text></navigator>
+    </view>
+    <view class="product">
+        <view class="weui-cell weui-cell__access">
+            <view class="weui-cell__bd"><text class="tit">作品展示</text></view>
+            <navigator url="../zuopin/zuopin" open-type="switchTab" class="weui-cell__ft weui-cell__ft_in-access">更多</navigator>
+
+        </view>
+        <view class="clearfix">
+            <block wx:for="{{zuopin}}">
+                <view  class="product-item" >
+                    <image src="{{item.image}}" mode="aspectFill" data-src="{{item.image}}" bindtap="previewImage"></image>
+                    <view class="ellipsis name">{{item.name}}</view>
+                </view>
+            </block>
+        </view>
+    </view>
+    <view class="case">
+        <view class="weui-cell weui-cell__access">
+            <view class="weui-cell__bd"><text class="tit">经典案例</text></view>
+            <navigator url="../caselist/caselist" open-type="navigate" class="weui-cell__ft weui-cell__ft_in-access">更多</navigator>
+        </view>  
+        <navigator  wx:for="{{case}}" url="{{item.url}}" open-type="navigate" class="weui-cell news-item">
+            <view class="weui-cell__hd"><image src="{{item.image}}" mode="aspectFill"></image></view>
+            <view class="weui-cell__bd">
+                <view class="title ellipsis">{{item.title}}</view>
+                <view class="desc ellipsis-2">{{item.desc}}</view>
+            </view>
+        </navigator>
+    </view>
+    
+</view>

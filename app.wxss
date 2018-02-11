@@ -1,0 +1,27 @@
+/**app.wxss**/
+@import "pages/base/weui.wxss";
+@import "pages/base/font.wxss";
+@import "pages/base/reset.wxss";
+
+.product-item{ position: relative; float: left; margin-bottom: 10rpx;}
+.product-item image{width: 100%; height: 100%;}
+.product-item:nth-child(3n),.product-item:nth-child(3n-2){ width: 750rpx; height:400rpx;}
+.product-item:nth-child(3n){ float: right;}
+.product-item:nth-child(3n),.product-item:nth-child(3n-1){ width: 370rpx; height: 300rpx;}
+.product-item .name{ height: 80rpx; padding: 0 30rpx; background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 20%, rgba(0,0,0,0) 100%); line-height: 80rpx; color: #FFF; font-size: 32rpx; position: absolute; left: 0; right: 0; bottom: 0; box-sizing: border-box;}
+
+.news-item{  -webkit-box-align: start; -webkit-align-items:flex-start; align-items:flex-start;}
+.news-item image{width: 240rpx; height: 180rpx; margin-right: 20rpx;}
+.news-item .weui-cell__bd{ overflow: hidden;}
+.news-item .title{ font-size: 16px;}
+.news-item .date{ font-size: 12px; color: #999;}
+.news-item .desc{ margin-top: 8px; font-size: 14px; color: #666;}
+
+.screen{ font-size: 0; white-space: nowrap;}
+.screen scroll-view{ height: 100%;}
+.screen-item{height: 100%; box-sizing: border-box; display: inline-block; margin: 0 10px; font-size: 16px;}
+.screen-item.active{ color: #e1472f; border-bottom: 3px solid #e1472f;}
+
+
+/* 返回顶部按钮 */
+.totop{width: 46px; height: 46px; background-color: rgba(0,0,0,0.7); border-radius: 50%; text-align: center; font-size: 18px; line-height: 46px; color: #FFF; position: fixed; right: 10px; bottom: 30px; z-index: 10;}

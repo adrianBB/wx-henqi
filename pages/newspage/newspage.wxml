@@ -1,0 +1,12 @@
+<!--newspage.wxml-->
+<view class="weui-content">
+    <view class="singlepage">
+        <view class="singlepage-title">三年两座流血的城，美国“黑与白”问题何时休？</view>
+        <view class="singlepage-date">发布时间：2017-08-17</view>
+        <view class="singlepage-cont">            
+            <image src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1970129937,1144013365&fm=173&s=01E248A30A7882DE4E552C87030010C3&w=500&h=332&img.JPEG" mode="widthFix" style="width:100%;"></image>
+            <view style="margin:10px 0;">中新网8月17日电(何路曼 程贞)因白人警察枪杀黑人引发弗格森骚乱3年后，夏洛茨维尔这个美国弗吉尼亚中部的宁静小城，以暴力流血的代价，触动了美国社会最敏感的神经，再次将根深蒂固的美国种族问题伤口撕裂开来。在美国，黑与白，不仅仅是肤色之间的差异，而是长久以来形成的偏见，是横亘在种族主义间难弥的裂痕……</view>
+            <view style="margin:10px 0;">当地时间2014年11月26日，美国纽约，数百抗议者聚集在纽约时代广场游行，抗议美国枪杀黑人青年的警察未遭起诉。</view>
+        </view>
+    </view>
+</view>
